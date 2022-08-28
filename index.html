@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <div class="page">
+
+        <header>
+            <h1>Avalie sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="/images/img.svg" alt="Imagem simbolizando avaliação">
+        </header>
+    
+        <div class="Tittle">
+            <p>Informações pessoais</p>
+        </div>
+    
+        <form action="">
+    
+            <label for="Name">Nome</label>
+            <input type="text" id="Name">
+    
+            <label for="Surname">Sobrenome</label>
+            <input type="text" id="Surname">
+    
+            <label for="email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="email">
+    
+            <fieldset>
+                <legend>Informações do mentor</legend>
+    
+                <label for="Tutor">Selecione quem foi seu mentor</label>
+                <select id="Tutor">
+                    <option>Fulano</option>
+                    <option>Beltrano</option>
+                    <option>Sicrano</option>
+                </select>
+    
+                <label for="Feedback">Feedback sobre o mentor</label>
+                <textarea name="Feeback" id="Feedback" cols="30" rows="10"></textarea>
+    
+                <input type="checkbox" id="doubt">
+                <label for="doubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Agendando a próxima mentoria</legend>
+    
+                <div class="col-3">
+                    <label for="Date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="Date">
+    
+                <label for="Hour">Das</label>
+                <input type="time" id="Hour">
+    
+                <label for="Hour">Até</label>
+                <input type="time" id="Hour">
+                </div>
+            </fieldset>
+    
+        </form>
+    </div>
+
+
+</body>
+</html>
