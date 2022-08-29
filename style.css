@@ -4,11 +4,48 @@
     box-sizing: border-box;
 }
 
+header {
+    width: 390px;
+    text-align: center;
+    margin: 107px auto auto auto;
+}
+
 h1 {
-    font-family: 'Staatliches', cursive;
+    font-weight: 400;
     font-size: 36px;
     line-height: 45px;
     color: #FFFFFF;
+    font-family: 'Staatliches', cursive;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    margin-top: 24px;
+    height: 100px;
+}
+
+.Tittle-info {
+    margin-top: 32px;
+    width: 750px;
+    height: 133px;
+    background: #F67669;
+    border-radius: 20px 20px 0px 0px;
+    
+  }
+
+.Tittle-info h2 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding: 50px 275px;
 }
 
 .page {
@@ -16,26 +53,16 @@ h1 {
     margin: auto;
 }
 
-header {
-    width: 390px;
-    margin-top: 107px;
-}
-
-header p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #BFD7E4;
+    margin-bottom: 392px;
 }
 
 body ::before {
     content: '';
     width: 100%;
-    height: 465px;
+    height: 471.6px;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,12 +70,153 @@ body ::before {
     background-color: #293241;
 }
 
-.tittle {
-    background-color: #F67669;
-}
-
 form {
     background-color: #FFFFFF;
     min-height: 300px;
     border-radius: 0px 0px 20px 20px;
+    padding: 32px 64px 64px 64px;
 }
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.col-2 > div:nth-child(1) {
+    width: 50%;
+}
+
+.col-2 > div:nth-child(2) {
+    width: 50%;
+}
+
+.input-wrapper, .input-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.input-wrapper label, .input-wrapper-2 label, .input-wrapper-3 label, .input-wrapper-4 label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+.input-wrapper label span, .input-wrapper-4 span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 9px;
+}
+
+.input-wrapper label span:hover, .input-wrapper-4 span:hover {
+    color: #67656d;
+}
+
+.input-wrapper input, .input-wrapper-4 input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+}
+
+.input-wrapper-2 select {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    width: 50%;
+}
+
+.input-wrapper-2 textarea {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 166px;
+    padding: 10px 24px;
+}
+
+.input-wrapper-3 {
+    align-items: center;
+}
+
+.input-wrapper-3 input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.input-wrapper-3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 36px;
+}
+
+.input-wrapper-4 {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-4 > div:nth-child(1) {
+    width: 50%;
+}
+
+.col-4 > div:nth-child(2) {
+    margin-left: 32px;
+    width: 25%;
+}
+
+.col-4 > div:nth-child(3) {
+    margin-left: 10px;
+    width: 25%;
+}
+
+.button {
+    height: 51px;
+    background-color: #F67669;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.button:hover {
+    background: #ff5542;
+}
+
+
+

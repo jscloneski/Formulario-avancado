@@ -22,53 +22,82 @@
             <img src="/images/img.svg" alt="Imagem simbolizando avaliação">
         </header>
     
-        <div class="Tittle">
-            <p>Informações pessoais</p>
+        <div class="Tittle-info">
+            <h2>Informações pessoais</h2>
         </div>
     
         <form action="">
     
-            <label for="Name">Nome</label>
-            <input type="text" id="Name">
+            <div class="col-2">
+                <div class="input-wrapper">
+                    <label for="Name">Nome</label>
+                    <input type="text" id="Name" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="Surname">Sobrenome</label>
+                    <input type="text" id="Surname" required>
+                </div>
+            </div>
     
-            <label for="Surname">Sobrenome</label>
-            <input type="text" id="Surname">
-    
-            <label for="email">Email <span>(digite um email válido)</span></label>
-            <input type="email" id="email">
+            <div class="input-wrapper">
+                <label for="Email">Email <span>(digite um Email válido)</span></label>
+                <input type="email" id="Email" required>
+            </div>
     
             <fieldset>
                 <legend>Informações do mentor</legend>
     
-                <label for="Tutor">Selecione quem foi seu mentor</label>
-                <select id="Tutor">
-                    <option>Fulano</option>
-                    <option>Beltrano</option>
-                    <option>Sicrano</option>
-                </select>
-    
-                <label for="Feedback">Feedback sobre o mentor</label>
-                <textarea name="Feeback" id="Feedback" cols="30" rows="10"></textarea>
-    
-                <input type="checkbox" id="doubt">
-                <label for="doubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                <div class="input-wrapper-2">
+                    <label for="Tutor">Selecione quem foi seu mentor</label>
+                        <select id="Tutor">
+                            <option>Fulano</option>
+                            <option>Beltrano</option>
+                            <option>Sicrano</option>
+                        </select>
+                </div>
+                
+                <div class="input-wrapper-2">
+                    <label for="Feedback">Feedback sobre o mentor</label>
+                    <textarea name="Feeback" id="Feedback" cols="30" rows="10"></textarea>
+                </div>
+
+                
+                <div class="input-wrapper-3">
+                    <input type="checkbox" id="doubt">
+                    <label for="doubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+              
             </fieldset>
     
             <fieldset>
                 <legend>Agendando a próxima mentoria</legend>
     
-                <div class="col-3">
-                    <label for="Date">Data <span>(DD/MM/AAAA)</span></label>
-                <input type="date" id="Date">
-    
-                <label for="Hour">Das</label>
-                <input type="time" id="Hour">
-    
-                <label for="Hour">Até</label>
-                <input type="time" id="Hour">
+                <div class="col-4">
+
+                    <div class="input-wrapper-4">
+                        <label for="Date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="Date">
+                    </div>
+
+                    <div class="input-wrapper-4">
+                        <label for="Hour">Das</label>
+                        <input type="time" id="Hour">
+                    </div>
+
+                    <div class="input-wrapper-4">
+                        <label for="Hour">Até</label>
+                        <input type="time" id="Hour">
+                    </div>
                 </div>
             </fieldset>
-    
+
+            <footer>
+                <div class="button">
+                    <input class="button" type="submit" value="SALVAR">
+                </div>
+            </footer>
+            
         </form>
     </div>
 
