@@ -14,7 +14,7 @@ Desafio proposto no programa Explorer da Rocketseat, a proposta era desenvolver 
 
 ## Deploy
 
- <a href="https://formularioavancadostage03.netlify.app/" target="_blank">Formulário de Avançado</a>
+ <a href="https://formularioavancadostage03.netlify.app/" target="_blank">Formulário Avançado</a>
 
 ## Imagem de referência
 
